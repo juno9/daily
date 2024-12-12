@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Main-Class: NewServer2
+Class-Path: mysql-connector-j-9.1.0.jar
+

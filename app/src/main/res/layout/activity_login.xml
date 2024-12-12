@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Activity_login">
+
+<Space
+    android:id="@+id/space1"
+    android:layout_width="match_parent"
+    android:layout_height="20dp"
+    />
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="342dp"
+        android:layout_height="141dp"
+        android:layout_below="@+id/space1"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/dailyreport" />
+
+    <TextView
+        android:id="@+id/입력값표시_이메일"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView10"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"
+        android:text="이메일"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/입력란_이메일"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/입력값표시_이메일"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/edittext_rounded_corner_rectangle"
+        android:hint="이메일 주소를 입력해주세요"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="#808080" />
+
+    <TextView
+        android:id="@+id/입력값표시_비밀번호"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/입력란_이메일"
+        android:layout_marginStart="10dp"
+        android:text="비밀번호"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/입력란_비밀번호"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+
+        android:layout_below="@id/입력값표시_비밀번호"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittext_rounded_corner_rectangle"
+        android:hint="비밀번호를 입력해주세요"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="#808080" />
+
+
+    <TextView
+        android:id="@+id/비밀번호찾기"
+        android:layout_width="186dp"
+        android:layout_height="24dp"
+
+        android:layout_below="@id/입력란_비밀번호"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="비밀번호를 잊어버리셨나요?"
+        android:textColor="#808080" />
+
+    <TextView
+        android:id="@+id/회원가입"
+        android:layout_width="69dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/비밀번호찾기"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="회원가입"
+        android:textColor="#808080"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/로그인버튼"
+        android:layout_width="249dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/회원가입"
+        android:layout_centerHorizontal="true"
+
+        android:text="로그인"
+        android:textSize="15dp" />
+
+</RelativeLayout>

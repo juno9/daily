@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+
+
+    <TextView
+        android:id="@+id/현재화면_비밀번호변경"
+        android:layout_width="229dp"
+        android:layout_height="65dp"
+        android:padding="10dp"
+        android:text="비밀번호 변경"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.148"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.069" />
+
+    <TextView
+        android:id="@+id/입력값표시_현재비밀번호"
+        android:layout_width="97dp"
+        android:layout_height="29dp"
+        android:ems="10"
+        android:text="현재 비밀번호"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19" />
+
+    <EditText
+        android:id="@+id/입력란_현재비밀번호"
+        android:layout_width="345dp"
+        android:layout_height="54dp"
+        android:background="@drawable/edittext_rounded_corner_rectangle"
+        android:ems="10"
+        android:hint="비밀번호를 입력해 주세요"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="#808080"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.621"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.258" />
+
+    <TextView
+        android:id="@+id/입력값표시_새비밀번호"
+        android:layout_width="129dp"
+        android:layout_height="33dp"
+        android:ems="10"
+        android:text="새 비밀번호"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.145"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.368" />
+
+
+    <EditText
+        android:id="@+id/입력란_새비밀번호"
+        android:layout_width="345dp"
+        android:layout_height="54dp"
+        android:background="@drawable/edittext_rounded_corner_rectangle"
+        android:ems="10"
+        android:hint="새 비밀번호를 입력해 주세요"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="#808080"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.621"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.428" />
+
+    <TextView
+        android:id="@+id/안내메시지_비밀번호"
+        android:layout_width="333dp"
+        android:layout_height="49dp"
+        android:ems="10"
+        android:textColor="@color/gray"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/입력값표시_새비밀번호확인"
+        android:layout_width="129dp"
+        android:layout_height="33dp"
+        android:ems="10"
+        android:text="새 비밀번호 확인"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.145"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.571" />
+    <EditText
+        android:id="@+id/입력란_새비밀번호확인"
+        android:layout_width="345dp"
+        android:layout_height="54dp"
+        android:background="@drawable/edittext_rounded_corner_rectangle"
+        android:ems="10"
+        android:hint="한번 더 똑같이 입력해 주세요"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="#808080"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.621"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.639" />
+
+    <TextView
+        android:id="@+id/안내메시지_비밀번호확인"
+        android:layout_width="333dp"
+        android:layout_height="49dp"
+        android:ems="10"
+        android:textColor="@color/gray"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.714" />
+
+    <Button
+        android:id="@+id/비밀번호변경완료버튼"
+        android:layout_width="287dp"
+        android:layout_height="59dp"
+        android:text="비밀번호 변경 완료"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.803" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

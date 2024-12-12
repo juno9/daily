@@ -1,0 +1,222 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activity_sign_up">
+
+
+
+    <TextView
+        android:id="@+id/화면이름표시_회원가입"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+
+        android:text="회원가입"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/입력값표시_이름"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/화면이름표시_회원가입"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:text="닉네임"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/입력란_닉네임"
+        android:layout_width="330dp"
+        android:layout_height="49dp"
+        android:layout_below="@id/입력값표시_이름"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/edittext_rounded_corner_rectangle"
+        android:hint="닉네임을 입력해주세요"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="#808080" />
+
+    <TextView
+        android:id="@+id/입력값표시_이메일"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/입력란_닉네임"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:text="이메일"
+        android:textColor="@color/black" />
+
+    <!-- 가로 배치되는 RelativeLayout -->
+    <RelativeLayout
+        android:id="@+id/인증메일_레이아웃"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/입력값표시_이메일"
+        android:layout_marginTop="8dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <EditText
+            android:id="@+id/입력란_이메일"
+            android:layout_width="0dp"
+            android:layout_height="49dp"
+            android:layout_toStartOf="@id/인증번호전송버튼"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/edittext_rounded_corner_rectangle"
+            android:hint="ex)power11@naver.com"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="#808080" />
+
+        <Button
+            android:id="@+id/인증번호전송버튼"
+            android:layout_width="104dp"
+            android:layout_height="49dp"
+            android:layout_alignParentEnd="true"
+            android:text="전송" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/안내메시지_이메일"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/인증메일_레이아웃"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/black" />
+    <TextView
+        android:id="@+id/입력값표시_인증번호"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/안내메시지_이메일"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:text="인증번호"
+        android:textColor="@color/black" />
+
+    <RelativeLayout
+        android:id="@+id/인증번호_레이아웃"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/입력값표시_인증번호"
+        android:layout_marginTop="8dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <EditText
+            android:id="@+id/입력란_인증번호"
+            android:layout_width="0dp"
+            android:layout_height="49dp"
+            android:layout_toStartOf="@id/인증버튼"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/edittext_rounded_corner_rectangle"
+            android:hint="ex)123456"
+            android:padding="10dp"
+            android:maxLength="6"
+            android:textColor="@color/black"
+            android:textColorHint="#808080" />
+
+        <Button
+            android:id="@+id/인증버튼"
+            android:layout_width="104dp"
+            android:layout_height="49dp"
+            android:layout_alignParentEnd="true"
+            android:text="인증하기" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/안내메시지_인증번호"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/인증번호_레이아웃"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/black" />
+    <TextView
+        android:id="@+id/입력값표시_비밀번호"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/안내메시지_인증번호"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:text="비밀번호"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/입력란_비밀번호"
+        android:layout_width="330dp"
+        android:layout_height="49dp"
+        android:layout_below="@id/입력값표시_비밀번호"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/edittext_rounded_corner_rectangle"
+        android:hint="비밀번호를 입력해주세요"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="#808080"
+        android:inputType="textPassword"/>
+
+    <TextView
+        android:id="@+id/입력값표시_비밀번호확인"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/입력란_비밀번호"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:text="비밀번호 확인"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:id="@+id/입력란_비밀번호확인"
+        android:layout_width="330dp"
+        android:layout_height="49dp"
+        android:layout_below="@id/입력값표시_비밀번호확인"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/edittext_rounded_corner_rectangle"
+        android:hint="한번 더 똑같이 입력해 주세요"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="#808080"
+        android:inputType="textPassword"/>
+    <TextView
+        android:id="@+id/안내메시지_비밀번호"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/입력란_비밀번호확인"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+
+
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="#808080" />
+
+    <Button
+        android:id="@+id/회원가입버튼"
+        android:layout_width="287dp"
+        android:layout_height="59dp"
+        android:layout_below="@id/안내메시지_비밀번호"
+        android:layout_marginTop="32dp"
+        android:layout_centerHorizontal="true"
+        android:text="회원가입" />
+
+    <ProgressBar
+        android:id="@+id/cpb"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

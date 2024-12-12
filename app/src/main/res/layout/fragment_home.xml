@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!-- 최상단 년도, 월 표시 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/년월텍스트뷰"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="2024년 11월"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/오늘날짜표시"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:background="@drawable/textedge"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="오늘"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <!-- 1주일 요일, 날짜 표시 RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/weekrecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp" />
+
+    <!-- 제목과 시간 표시 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="시간"
+            android:textColor="@color/gray" />
+
+        <Space
+            android:layout_width="30dp"
+            android:layout_height="0dp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="제목"
+            android:textColor="@color/gray" />
+    </LinearLayout>
+
+    <!-- 기록 RecyclerView와 버튼을 겹치기 위한 FrameLayout -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1">
+
+        <!-- 기록 RecyclerView -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recordrecyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!-- 기록 추가 버튼 -->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/기록추가버튼"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_margin="16dp"
+            android:contentDescription="기록 추가 버튼"
+            app:srcCompat="@drawable/floatingbutton" />
+    </FrameLayout>
+
+</LinearLayout>

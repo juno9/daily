@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string-array name="spinner_array">
+        <item>공부</item>
+        <item>독서</item>
+        <item>업무</item>
+        <item>작업</item>
+        <item>기타</item>
+    </string-array>
+</resources>

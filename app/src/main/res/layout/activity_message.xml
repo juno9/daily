@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!-- 상단 프로필 및 뒤로가기 섹션 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/이미지뷰_뒤로가기2"
+            android:layout_width="26dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="16dp"
+            app:srcCompat="@drawable/leftangle" />
+
+        <TextView
+            android:id="@+id/텍스트뷰_상대유저이름"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:textColor="@color/black" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/이미지뷰_프로필이미지"
+            android:layout_width="81dp"
+            android:layout_height="66dp"
+            app:srcCompat="@drawable/graycircle" />
+    </LinearLayout>
+
+    <!-- 채팅 내용 리스트뷰 -->
+    <ListView
+        android:id="@+id/리스트뷰_채팅내용"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:transcriptMode="alwaysScroll" />
+
+    <!-- 메시지 입력 및 전송 섹션 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <EditText
+            android:id="@+id/입력란_채팅내용"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@drawable/edge"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/버튼_전송"
+            android:layout_width="53dp"
+            android:layout_height="59dp"
+            android:text="전송" />
+    </LinearLayout>
+</LinearLayout>
